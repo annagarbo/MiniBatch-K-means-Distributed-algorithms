@@ -1,14 +1,14 @@
 # MiniBatch-K-means-Distributed-algorithms
-This project has been developed to verify the advantage and disadvantage of a distributed MiniBatch K-means algorithm.\
-For this purpose CloudVeneto virtual machines were used. Indeed open source Apache Spark has provided the cluster computing framework required to test the algorithm performance. The algorithm has been developed in python.\
-In order to clarify the process, the developer undertakes to recommend a reading path for the different Jupyter Notebooks.\
+This project has been developed to verify the advantage and disadvantage of a distributed MiniBatch K-means algorithm.
+For this purpose CloudVeneto virtual machines were used. Indeed open source Apache Spark has provided the cluster computing framework required to test the algorithm performance. The algorithm has been developed in python.
+In order to clarify the process, the developer undertakes to recommend a reading path for the different Jupyter Notebooks.
+
+Project structure is the following:
+
+1. Brief_Algorithm_Test.ipynb:
+   a simple dataset has been produced to verify the work of the algorithm. The dataset is composed by 5 different blobs so the expectations are the clear clustering performed by the algorithm which has been satisfied. Here is performed the first version of the algorithm were only the processes were parallelized and the dataset instead remain in the master environment.
 \
-Project structure is the following:\
-\
-1. # Brief_Algorithm_Test.ipynb:
-   a simple dataset has been produced to verify the work of the algorithm. The dataset is composed by 5 different blobs so the expectations are the clear clustering performed by the algorithm which has been satisfied. Here is performed the first version of the algorithm were only the processes were parallelized and the dataset instead remain in the master environment.\
-\
-2. # Processes_Parallelized.ipynb:
+2. Processes_Parallelized.ipynb:
    as mentioned in the previous paragraph in this version of the algorithm only the processes were parallelized. Here has been used the fetch_rcv1.target dataset provided by ScikitLearn to test the algorithm.Testing means to perform algorithm with different partitions and different number of cores provided by the virtual machines. This notebook aims to show how performance data has been collected in this specific case.\
 \
 3. # Processes_DataFrame_Spark.ipynb:
